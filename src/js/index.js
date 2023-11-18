@@ -1,4 +1,7 @@
 
+const burger = document.querySelector(".bg-bars") 
+
+
 function burgerMenu() {
   const menuLinks = document.querySelector(".links")
 
@@ -9,3 +12,6 @@ function burgerMenu() {
     menuLinks.style.display = "none";
   }
 }
+burger.addEventListener("click", function() {
+  burgerMenu();
+})
