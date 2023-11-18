@@ -1,0 +1,16 @@
+header{
+  background-color: rgb(18 46 221);
+}
+
+header img{
+  max-width: 100%;
+}
+
+header ul li{
+  list-style-type: none;
+}
+
+.navMenu a{
+  color: white;
+  text-decoration: none;
+}
