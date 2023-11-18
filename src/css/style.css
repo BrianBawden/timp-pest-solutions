@@ -1,3 +1,12 @@
+html{
+  background-color: black;
+}
+
+body{
+  max-width: 95%;
+  color: white;
+}
+
 header{
   background-color: rgb(18 46 221);
   padding: .5rem 0;
@@ -13,15 +22,11 @@ header img{
   font-size: x-large;
 }
 
-.heading:hover{
-  color: blue;
-}
-
 .heading a:nth-child(1){
   display: block;
   position: absolute;
-  right: 0;
-  padding: 0 1rem;
+  right: 4%;
+  padding-right: 1%;
 }
 
 .bg-bars{
@@ -34,10 +39,17 @@ header img{
   color: blue;
   max-width: 1.5rem;
 }
-a:hover{
+
+.bg-bars a:visited{
+  color: white;
+  background-color: unset;
+}
+
+.navBar a:hover{
   background-color: #FFF;
   color: rgb(18 46 221);
 }
+
 .navBar a{
   color: white;
   text-decoration: none;
