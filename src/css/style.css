@@ -1,14 +1,15 @@
 html{
-  background-color: black;
+  background-color: #4c4949;
 }
 
 body{
-  max-width: 95%;
   color: white;
+  border: solid 0.5px;
+  padding: 0.5rem;
 }
 
 header{
-  background-color: rgb(18 46 221);
+  background-color: #0c1a71;
   padding: .5rem 0;
 }
 
@@ -63,4 +64,8 @@ header img{
 .links a {
   border-bottom: solid white 2px;
   max-width: 6rem;
+}
+
+.logo img{
+  max-height: 250px;
 }
