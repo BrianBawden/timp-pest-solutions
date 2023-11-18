@@ -1,21 +1,11 @@
-// console.log("test")
-// var currentDate = new Date();
-// console.log(currentDate);
 
-// // import dayjs from './dayjs'
-// const dayjs = require('dayjs');
-// const dateMDY = dayjs(currentDate, 'MM-DD-YY');
+function burgerMenu() {
+  const menuLinks = document.querySelector(".links")
 
-// console.log(dateMDY);
-
-
-// import dayjs from 'dayjs';
-//  console.log("test"); 
-//  const currentDate = new Date();
-//  console.log(currentDate); 
-//  const dateMDY = dayjs(currentDate).format('MM-DD-YY');
-
-const dayjs = require('dayjs'); 
-console.log("test"); 
-const currentDate = new Date();console.log(currentDate); 
-const dateMDY = dayjs(currentDate).format('MM-DD-YY');
+  if (menuLinks.style.display === "none"){
+    menuLinks.style.display = "block";
+  }
+  else{
+    menuLinks.style.display = "none";
+  }
+}
