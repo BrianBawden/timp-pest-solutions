@@ -1,16 +1,35 @@
 header{
   background-color: rgb(18 46 221);
+  padding: .5rem 0;
 }
 
 header img{
-  max-width: 100%;
+  display: block;
+  max-width: 90%;
+  margin: 0 auto
 }
 
-header ul li{
-  list-style-type: none;
+.heading a:nth-child(1){
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: .5rem 1rem;
 }
-
-.navMenu a{
+a:hover{
+  background-color: #FFF;
+  color: rgb(18 46 221);
+}
+.navBar a{
   color: white;
   text-decoration: none;
+  display: flex;
+}
+
+.links{
+  /* display: none; */
+  padding: .5rem;
+}
+.links a {
+  border-bottom: solid white 2px;
+  max-width: 6rem;
 }
