@@ -9,11 +9,30 @@ header img{
   margin: 0 auto
 }
 
+.heading{
+  font-size: x-large;
+}
+
+.heading:hover{
+  color: blue;
+}
+
 .heading a:nth-child(1){
   display: block;
   position: absolute;
   right: 0;
-  padding: .5rem 1rem;
+  padding: 0 1rem;
+}
+
+.bg-bars{
+  margin: 1rem 0 0 .5rem;
+  max-width: 2rem;
+}
+
+.bg-bars:hover{
+  background-color: #FFF;
+  color: blue;
+  max-width: 1.5rem;
 }
 a:hover{
   background-color: #FFF;
