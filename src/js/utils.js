@@ -1,13 +1,13 @@
 
-const burger = document.querySelector(".bg-bars") // burger is the hamburger button for the mobile view drop down
 const head = document.querySelector("#head");
 const headFile = "/src/partials/head.html";
 const header = document.querySelector("#header");
 const headerFile = "/src/partials/header.html";
 const footer = document.querySelector("#footer");
 const footerFile = "/src/partials/footer.html";
-// burgerMenu will add or remove the class hide/show to display the dropdown menu
-function burgerMenu() {
+
+// showHideBurger will add or remove the class hide/show to display the dropdown menu in mobile view.
+function showHideBurger() {
   const menuLinks = document.querySelector(".links")
 
   if (menuLinks.classList.contains("hide")){
@@ -22,11 +22,12 @@ function burgerMenu() {
   
 }
 
-// evenListener takes two parameters btn: the button clicked. action: function to be called on click. 
-function eventListener(btn, action){
-  btn.addEventListener("click", function(event){
-    action(event, btn);
-  })
+// getBgrBtn listens for a click on the burger button for the drop down menu. 
+function getBgrBtn() {
+  setTimeout(() => {
+    const burger = document.querySelector(".bg-bars") // burger is the hamburger button for the mobile view drop down
+    burger.addEventListener("click", showHideBurger);
+  }, 500);
 }
 
 // gets and sets html for consistent layout of pages. location is the querySelector and file is the path to the content being added.
@@ -45,4 +46,5 @@ async function addHtmlContent(location, file) {
 addHtmlContent(head, headFile);
 addHtmlContent(header, headerFile);
 addHtmlContent(footer, footerFile);
-eventListener(burger, burgerMenu);
+getBgrBtn();
+
