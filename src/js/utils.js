@@ -30,9 +30,7 @@ async function addContent(location, file) {
   try{
     //get html content
     const response = await fetch(file)
-    console.log("response: ", response)
     const html = await response.text()
-    console.log("html: ", html)
 
     location.innerHTML = html;
   } catch{
