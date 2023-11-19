@@ -5,12 +5,16 @@ const burger = document.querySelector(".bg-bars")
 function burgerMenu() {
   const menuLinks = document.querySelector(".links")
 
-  if (menuLinks.style.display === "" || menuLinks.style.display === "none" ){
-    menuLinks.style.display = "block";
+  if (menuLinks.classList.contains("hide")){
+    menuLinks.classList.add("show");
+    menuLinks.classList.remove("hide");
   }
   else{
-    menuLinks.style.display = "none";
+    menuLinks.classList.add("hide");
+    menuLinks.classList.remove("show");
+
   }
+  
 }
 burger.addEventListener("click", function() {
   burgerMenu();

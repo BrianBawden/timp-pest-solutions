@@ -66,6 +66,14 @@ header img{
   max-width: 6rem;
 }
 
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
 .logo img{
   max-height: 250px;
 }
