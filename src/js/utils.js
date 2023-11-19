@@ -37,7 +37,7 @@ async function addHtmlContent(location, file) {
     const response = await fetch(file)
     const html = await response.text()
 
-    location.innerHTML = html;
+    location.innerHTML += html;
   } catch{
     console.log(`addContent failed at ${file}.`)
   }
