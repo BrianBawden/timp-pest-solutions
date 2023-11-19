@@ -1,0 +1,79 @@
+html{
+  background-color: #4c4949;
+}
+
+body{
+  color: white;
+  border: solid 0.5px;
+  padding: 0.5rem;
+}
+
+header{
+  background-color: #0c1a71;
+  padding: .5rem 0;
+}
+
+header img{
+  display: block;
+  max-width: 90%;
+  margin: 0 auto
+}
+
+.heading{
+  font-size: x-large;
+}
+
+.heading a:nth-child(1){
+  display: block;
+  position: absolute;
+  right: 4%;
+  padding-right: 1%;
+}
+
+.bg-bars{
+  margin: 1rem 0 0 .5rem;
+  max-width: 2rem;
+}
+
+.bg-bars:hover{
+  background-color: #FFF;
+  color: blue;
+  max-width: 1.5rem;
+}
+
+.bg-bars a:visited{
+  color: white;
+  background-color: unset;
+}
+
+.navBar a:hover{
+  background-color: #FFF;
+  color: rgb(18 46 221);
+}
+
+.navBar a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+.links{
+  display: none;
+  padding: .5rem;
+}
+.links a {
+  border-bottom: solid white 2px;
+  max-width: 6rem;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.logo img{
+  max-height: 250px;
+}
