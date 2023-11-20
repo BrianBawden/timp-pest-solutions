@@ -77,3 +77,19 @@ header img{
 .logo img{
   max-height: 250px;
 }
+
+input{
+  margin-bottom: 1rem;
+}
+
+form a {
+  color: #1dbbd7;
+}
+
+form a:hover{
+  background-color: #0c1a71;
+}
+
+form a:visited{
+  color: beige;
+}

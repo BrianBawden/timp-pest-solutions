@@ -16,19 +16,44 @@
       <fieldset>
         <legend>Login</legend>
         <form action="login" method="post">
+          <fieldset>
+            <legend>User Contact Info</legend>
+            <label for="firstName">*First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required ><br>
 
-          <label for="firstName">*First Name:</label><br>
-          <input type="text" id="firstName" name="firstName" required ><br>
+            <label for="lastName">*Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required ><br>
 
-          <label for="lastName">*Last Name:</label><br>
-          <input type="text" id="lastName" name="lastName" required ><br>
+            <label for="userPhone">*Phone Number:</label><br>
+            <input type="tel" id="userPhone" name="userPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
 
-          <label for="userEmail">*Email:</label><br>
-          <input type="email" id="userEmail" name="userEmail" required ><br>
+            <label for="userEmail">*Email:</label><br>
+            <input type="email" id="userEmail" name="userEmail" required ><br>
+          </fieldset><br>
 
-          <label for="userPassword">*Password:</label><br>
-          <input type="password" id="userPassword" name="userPassword" required ><br>
-        
+          <fieldset>
+            <legend>User Address</legend>
+            <label for="userStreet">*Street Address:</label><br>
+            <input type="text" id="userStreet" name="userStreet" required ><br>
+
+            <label for="userCity">*City:</label><br>
+            <input type="text" id="userCity" name="userCity" required ><br>
+
+            <label for="userState">*State:</label><br>
+            <input type="text" id="userState" name="userState" required ><br>
+
+            <label for="userZip">*Zip Code:</label><br>
+            <input type="number" id="userZip" name="userZip" required ><br>
+          </fieldset><br>
+
+          <fieldset>
+            <legend>Password </legend>
+            <label for="userPassword">*New Password:</label><br>
+            <input type="password" id="userPassword" name="userPassword" required ><br>
+
+            <label for="userPwConfirm">*Confirm Password:</label><br>
+            <input type="password" id="userPwConfirm" name="userPwConfirm" required ><br>
+          </fieldset><br>
           <button>Register</button><br>
           <input type="hidden" name="action" value="register">
 
