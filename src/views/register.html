@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="head">
-  <title>Timp Pest Solutions | Login</title>
+  <title>Timp Pest Solutions | Register</title>
   <!-- loaded from src/partials/head.html by utils.js addHtmlContent()  -->
 </head>
 <body>
@@ -10,22 +10,28 @@
   </header>
   
   <main>
-    <h1>Login</h1>
+    <h1>Register</h1>
 
     <div class="container">
       <fieldset>
         <legend>Login</legend>
         <form action="login" method="post">
+
+          <label for="firstName">*First Name:</label><br>
+          <input type="text" id="firstName" name="firstName" required ><br>
+
+          <label for="lastName">*Last Name:</label><br>
+          <input type="text" id="lastName" name="lastName" required ><br>
+
           <label for="userEmail">*Email:</label><br>
           <input type="email" id="userEmail" name="userEmail" required ><br>
 
           <label for="userPassword">*Password:</label><br>
           <input type="password" id="userPassword" name="userPassword" required ><br>
         
-          <button>Login</button><br>
-          <input type="hidden" name="action" value="Login">
+          <button>Register</button><br>
+          <input type="hidden" name="action" value="register">
 
-          <p>Create New <a href="/src/views/register.html">Account</a></p>
         </form>
       </fieldset>
     </div>
