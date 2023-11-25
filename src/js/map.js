@@ -34,8 +34,8 @@ async function initMap() {
   geocoder = new google.maps.Geocoder();
   
   map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+    center: { lat: 39.8283, lng: -98.5795 },
+    zoom: 3,
   });
 }
 
