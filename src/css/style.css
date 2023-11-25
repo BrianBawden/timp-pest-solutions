@@ -8,6 +8,8 @@ body{
   padding: 0.5rem;
 }
 
+/******** header ********/
+
 header{
   background-color: #0c1a71;
   padding: .5rem 0;
@@ -29,6 +31,13 @@ header img{
   right: 4%;
   padding-right: 1%;
 }
+
+.logo img{
+  max-height: 250px;
+}
+
+
+/******** nav-bar ********/
 
 .bg-bars{
   margin: 1rem 0 0 .5rem;
@@ -66,16 +75,15 @@ header img{
   max-width: 6rem;
 }
 
+/******** General ********/
+
+
 .hide{
   display: none;
 }
 
 .show{
   display: block;
-}
-
-.logo img{
-  max-height: 250px;
 }
 
 input{
