@@ -1,4 +1,4 @@
-// const database = require('./database.js')
+const database = require('./database.js')
 
 const head = document.querySelector("#head");
 const headFile = "/src/partials/head.html";

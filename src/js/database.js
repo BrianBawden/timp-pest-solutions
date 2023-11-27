@@ -33,7 +33,9 @@ class Database {
   async query(sql, params){
     try{
       const result = await this.client.query(sql, params);
+      console.table(result.rows)
       return result.rows;
+      this.disconnect()
     } catch(err){
       console.log(err)
     }
@@ -44,3 +46,6 @@ class Database {
 const database = new Database()
 
 module.exports = database;
+
+database.connect()
+database.query('SELECT * FROM test;')
