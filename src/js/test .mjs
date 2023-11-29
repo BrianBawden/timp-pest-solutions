@@ -1,3 +1,14 @@
+// import { star } from "./sql.mjs";
+
+// console.log(star());
+
+// const { Client } = require('pg');
+// import pkg from "pg";
+// const Client = pkg;
+
+
+// import { Client } from 'pg';
+
 import pkg from 'pg';
 const { Client } = pkg;
 
@@ -47,9 +58,7 @@ class Database {
 
 const database = new Database()
 
-import { sql } from "./sql.mjs";
-// console.log(sql);
-// let test = (result) => star();
+
 database.connect()
-database.query(sql())
+database.query('SELECT * FROM test;')
 
