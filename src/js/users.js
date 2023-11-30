@@ -1,8 +1,23 @@
+import { sqlSelectAll } from "./sql.mjs";
+
 
 const regBtn = document.querySelector("#regBtn");
 
 regBtn.addEventListener("click", (event) => {
   event.preventDefault();
+
+  let newUser = getRegisterInfo();
+
+  if (newUser){
+    console.log(newUser.email)
+    registration(newUser)
+  }else{
+    alert("Registration failed!")
+  }
+  
+  })
+
+function getRegisterInfo(){
   const get_fname = document.querySelector("#fname").value
   const get_lname = document.querySelector("#lname").value
   const get_phone = document.querySelector("#phone").value
@@ -27,8 +42,9 @@ regBtn.addEventListener("click", (event) => {
   user.pw = get_pw;
   user.pwConfirm = get_pwConfirm;
   
-  console.log(user)
-  })
+  return user
+}
 
-
-
+export function registration(user){
+  console.table(sqlSelectAll);
+}

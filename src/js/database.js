@@ -47,8 +47,11 @@ class Database {
 
 const database = new Database()
 
-import { sql } from "./sql.mjs";
+import { sqlSelectAll } from "./sql.mjs";
+// import { registration } from './users.js';
+
+// console.log(registration)
 // console.log(sql);
 database.connect()
-database.query(sql())
+database.query(sqlSelectAll())
 
