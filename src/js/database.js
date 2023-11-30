@@ -49,7 +49,6 @@ const database = new Database()
 
 import { sql } from "./sql.mjs";
 // console.log(sql);
-// let test = (result) => star();
 database.connect()
 database.query(sql())
 
