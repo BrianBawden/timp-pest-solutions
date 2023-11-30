@@ -1,0 +1,8 @@
+How to filter data.
+
+// Assuming 'clientFirstname' is the id of your input field
+const clientFirstnameInput = document.getElementById('clientFirstname');
+const clientFirstnameValue = clientFirstnameInput.value.trim();
+const sanitizedClientFirstname = encodeURIComponent(clientFirstnameValue);
+
+console.log(sanitizedClientFirstname);
