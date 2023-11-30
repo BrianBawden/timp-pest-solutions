@@ -18,46 +18,48 @@
         <form action="register" method="post">
           <fieldset>
             <legend>User Contact Info</legend>
-            <label for="firstName">*First Name:</label><br>
-            <input type="text" id="firstName" name="firstName" required ><br>
+            <label for="fname">*First Name:</label><br>
+            <input type="text" id="fname" name="fname"   ><br>
 
-            <label for="lastName">*Last Name:</label><br>
-            <input type="text" id="lastName" name="lastName" required ><br>
+            <label for="lname">*Last Name:</label><br>
+            <input type="text" id="lname" name="lname"   ><br>
 
-            <label for="userPhone">*Phone Number:</label><br>
-            <input type="tel" id="userPhone" name="userPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
+            <label for="phone">*Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  ><br>
 
-            <label for="userEmail">*Email:</label><br>
-            <input type="email" id="userEmail" name="userEmail" required ><br>
+            <label for="email">*Email:</label><br>
+            <input type="email" id="email" name="email"  ><br>
           </fieldset><br>
 
           <fieldset>
             <legend>User Address</legend>
-            <label for="userStreet">*Street Address:</label><br>
-            <input type="text" id="userStreet" name="userStreet" required ><br>
+            <label for="streetadr">*Street Address:</label><br>
+            <input type="text" id="streetadr" name="streetadr"  ><br>
 
-            <label for="userCity">*City:</label><br>
-            <input type="text" id="userCity" name="userCity" required ><br>
+            <label for="city">*City:</label><br>
+            <input type="text" id="city" name="city"   ><br>
 
-            <label for="userState">*State:</label><br>
-            <input type="text" id="userState" name="userState" required ><br>
+            <label for="st">*State:</label><br>
+            <input type="text" id="st" name="st"  ><br>
 
-            <label for="userZip">*Zip Code:</label><br>
-            <input type="number" id="userZip" name="userZip" required ><br>
+            <label for="zip">*Zip Code:</label><br>
+            <input type="number" id="zip" name="zip"  ><br>
           </fieldset><br>
 
           <fieldset>
             <legend>Password </legend>
-            <label for="userPassword">*New Password:</label><br>
-            <input type="password" id="userPassword" name="userPassword" required ><br>
+            <label for="pw">*New Password:</label><br>
+            <input type="password" id="pw" name="pw"  ><br>
 
-            <label for="userPwConfirm">*Confirm Password:</label><br>
-            <input type="password" id="userPwConfirm" name="userPwConfirm" required ><br>
+            <label for="pwConfirm">*Confirm Password:</label><br>
+            <input type="password" id="pwConfirm" name="pwConfirm"  ><br>
           </fieldset><br>
-          <input type="submit" value="Register"> <br>
-          <input type="hidden" name="action" value="register">
-
+          <!-- <input type="submit" value="Register"> <br> -->
+          <!-- <input type="hidden" name="action" value="register"> -->
+          
         </form>
+        <!-- <button id="star">testing</button> -->
+        <button id="regBtn">Register</button>
       </fieldset>
     </div>
   </main>
@@ -65,5 +67,6 @@
     <!-- loaded from src/partials/footer.html by utils.js addHtmlContent() -->
   </footer>
   <script src="../js/utils.js" type="module"></script>
+  <script src="../js/users.js" type="module"></script>
 </body>
 </html>
