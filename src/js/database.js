@@ -53,5 +53,5 @@ import { sqlSelectAll } from "./sql.mjs";
 // console.log(registration)
 // console.log(sql);
 database.connect()
-database.query(sqlSelectAll())
+database.query(sqlSelectAll('users'))
 
