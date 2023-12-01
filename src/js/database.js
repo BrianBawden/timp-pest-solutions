@@ -42,16 +42,23 @@ class Database {
       this.disconnect()
     }
   }
-
 }
+
+// export function addUser(sql){
+//   const log = new Database()
+//   log.connect()
+//   log.query(sql)
+//   log.disconnect()
+// }
 
 const database = new Database()
 
-import { sqlSelectAll } from "./sql.mjs";
+import { sqlSelectAll, sqlInsert } from "./sql.mjs";
 // import { registration } from './users.js';
 
 // console.log(registration)
 // console.log(sql);
 database.connect()
+// database.query(sqlInsert('kate', 'bawden', '098-765-4321', 'kate@test.com', 'fdsa', '211', 'canton', 'GA', '30114'))
 database.query(sqlSelectAll('users'))
 

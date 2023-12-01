@@ -1,4 +1,4 @@
-import { sqlSelectAll } from "./sql.mjs";
+import { sqlSelectAll, sqlInsert } from "./sql.mjs";
 
 
 const regBtn = document.querySelector("#regBtn");
@@ -9,7 +9,7 @@ regBtn.addEventListener("click", (event) => {
   let newUser = getRegisterInfo();
 
   if (newUser){
-    console.log(newUser.email)
+    // console.log(newUser)
     registration(newUser)
   }else{
     alert("Registration failed!")
@@ -29,22 +29,27 @@ function getRegisterInfo(){
   const get_pw = document.querySelector("#pw").value
   const get_pwConfirm = document.querySelector("#pwConfirm").value
 
-  const user = {}
+  const user = []
   
-  user.fname = get_fname;
-  user.lname = get_lname;
-  user.phone = get_phone;
-  user.email = get_email;
-  user.streetadr = get_streetadr;
-  user.city = get_city;
-  user.st = get_st;
-  user.zip = get_zip;
-  user.pw = get_pw;
-  user.pwConfirm = get_pwConfirm;
+  user.push(get_fname)
+  user.push(get_lname)
+  user.push(get_phone)
+  user.push(get_email)
+  user.push(get_streetadr)
+  user.push(get_city)
+  user.push(get_st)
+  user.push(get_zip)
+  user.push(get_pw)
+  // user.push(get_pwConfirm)
   
   return user
 }
 
 export function registration(user){
-  console.table(sqlSelectAll);
+
+  // let userInsert = sqlInsert(user[0], user[1], user[2], user[3], user[4], user[5], user[6], user[7], user[8])
+  
+  console.log("success register: ", user[0])
+  // console.log(userInsert)
+  // console.log(sqlInsert(user[0], user[1], user[2], user[3], user[4], user[5], user[6], user[7], user[8]));
 }
