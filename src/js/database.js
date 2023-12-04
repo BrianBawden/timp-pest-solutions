@@ -49,7 +49,6 @@ class Database {
 //   log.connect()
 //   log.query(sql)
 //   log.disconnect()
-//   console.log("test")
 // }
 
 const database = new Database()
